@@ -36,5 +36,5 @@ public class PaintJob {
         }
 
         return (int) (Math.ceil(area / areaPerBucket));
-    }p
+    }
 }
