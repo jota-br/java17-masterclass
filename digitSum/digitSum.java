@@ -1,4 +1,4 @@
-public class Main {
+public class digitSum {
     public static void main(String[] args) {
         int sum = sumDigits(4);
         System.out.println(sum);

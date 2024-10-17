@@ -7,7 +7,7 @@ public class Main {
         car.setMake("Porsche");
         car.setModel("Carrera");
         car.setDoors(2);
-        car.setConvertible(true);
+        car.setConvertible(false);
         car.setColor("black");
 
         car.describeCar();
