@@ -1,6 +1,6 @@
-public class IsPalindrome {
+public class FirstAndLastDigitSum {
     public static void main (String[] args) {
-        System.out.println(isPalindrome(11));
+        System.out.println(sumFirstAndLastDigit(11));
     }
     public static int sumFirstAndLastDigit(int number) {
         if (number < 0) {
