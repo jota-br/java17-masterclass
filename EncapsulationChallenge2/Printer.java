@@ -1,5 +1,5 @@
 public class Printer {
-    
+
     private int tonerLevel;
     private int pagesPrinted;
     private boolean duplex;
@@ -11,8 +11,11 @@ public class Printer {
     }
 
     public int addToner(int tonerAmount) {
+        if (tonerAmount > 100 || tonerAmount <= 0) {
+            return -1;
+        }
         int tempAmount = tonerAmount + this.tonerLevel;
-        if (tempAmount > 100 || tempAmount < 0) {
+        if (tempAmount > 100 || tempAmount < 0 || tonerAmount > 100) {
             return -1;
         }
         this.tonerLevel += tonerAmount;
