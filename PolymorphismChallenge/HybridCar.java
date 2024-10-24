@@ -10,4 +10,15 @@ public class HybridCar extends Car {
         this.batterySize = batterySize;
         this.cylinders = cylinders;
     }
+
+    @Override
+    public void startEngine() {
+        System.out.printf("Hybrid -> %d cylinders are fired up.%n", this.cylinders);
+        System.out.printf("Hybrid -> switch %d kWh battery on, Ready%n", this.batterySize);
+    }
+
+    @Override
+    protected void runEngine() {
+        System.out.printf("Hybrid -> usage below average: %.2f %n", this.avgKmPerLitre);
+    }
 }
